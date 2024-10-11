@@ -99,7 +99,7 @@ namespace Calculadora.Classes
                 int x = int.Parse(Console.ReadLine()!);
                 Console.Write("  Valor 2: ");
                 int y = int.Parse(Console.ReadLine()!);
-                Console.WriteLine($"  {x} vezes {y} é: {x * y}");
+                Console.WriteLine($"  {x} x {y} é: {x * y}");
                 Thread.Sleep(1000);
 
                 Console.WriteLine("\n  Deseja realizar mais um cálculo?");
@@ -347,74 +347,26 @@ namespace Calculadora.Classes
                  }
             }
         }
-
-        public void Incremento()
+   
+        public void Tabuada()
         {
             bool loop = true;
             while(loop)
             {
+                
                 Console.Clear();
-                menu.Title("Incremento");
+                menu.Title("Tabuada");
                 Console.Write("  Digite o valor: ");
                 int x = int.Parse(Console.ReadLine()!);
-                Console.Write("  Digite o limite: ");
-                int y = int.Parse(Console.ReadLine()!);
-                
-                while(x < y)
+
+                for(int contador = 1; contador <= 10; contador++ )
                 {
-                    x++;
-                    Console.WriteLine("  --");
-                    Console.WriteLine($"  {x}");
+                Console.WriteLine($"  {x} x {contador} é: {x * contador}");
                 }
 
                 Thread.Sleep(1000);
 
-                Console.WriteLine("\n  Deseja realizar mais um cálculo?");
-                Console.Write($"  S/N: ");
-                string opcao = Console.ReadLine()!;  
-                switch (opcao)
-                {
-                    case "S" or "s": loop = true;
-                        break;
-                    case "N" or "n": loop = false;
-                                     Console.WriteLine("  Retornando ao menu...");
-                                     Thread.Sleep(1000);
-                                     menu.MenuOp();
-                        break;
-                    default: loop = false; 
-                             Console.WriteLine("\n  Opção Inválida!");
-                             Thread.Sleep(1000);
-                             Console.WriteLine("  Retornando ao menu...");
-                             Thread.Sleep(1000);
-                             menu.MenuOp();
-                        break;
-                }
-            }
-
-        }
-
-        public void Decremento()
-        {
-            bool loop = true;
-            while(loop)
-            {
-                Console.Clear();
-                menu.Title("Decremento");
-                Console.Write("  Digite o valor: ");
-                int x = int.Parse(Console.ReadLine()!);
-                Console.Write("  Digite o limite: ");
-                int y = int.Parse(Console.ReadLine()!);
-                
-                while(x > y)
-                {
-                    x--;
-                    Console.WriteLine("  --");
-                    Console.WriteLine($"  {x}");
-                }  
-
-                Thread.Sleep(1000);
-
-                Console.WriteLine("\n  Deseja realizar mais um cálculo?");
+                Console.WriteLine("\n  Deseja ver mais alguma tabuada?");
                 Console.Write($"  S/N: ");
                 string opcao = Console.ReadLine()!;  
                 switch (opcao)
@@ -436,6 +388,5 @@ namespace Calculadora.Classes
                 }
             }
         }
-           
     }
 }

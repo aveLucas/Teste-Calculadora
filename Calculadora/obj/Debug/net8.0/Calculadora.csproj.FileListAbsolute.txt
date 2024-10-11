@@ -12,3 +12,4 @@ C:\Users\lucas\OneDrive\Documentos\Coding\VsCodes\Bootcamp (Randstad - Backend c
 C:\Users\lucas\OneDrive\Documentos\Coding\VsCodes\Bootcamp (Randstad - Backend com .NET)\Teste Calculadora\Calculadora\obj\Debug\net8.0\Calculadora.pdb
 C:\Users\lucas\OneDrive\Documentos\Coding\VsCodes\Bootcamp (Randstad - Backend com .NET)\Teste Calculadora\Calculadora\obj\Debug\net8.0\Calculadora.genruntimeconfig.cache
 C:\Users\lucas\OneDrive\Documentos\Coding\VsCodes\Bootcamp (Randstad - Backend com .NET)\Teste Calculadora\Calculadora\obj\Debug\net8.0\ref\Calculadora.dll
+C:\Users\lucas\OneDrive\Documentos\Coding\VsCodes\Bootcamp (Randstad - Backend com .NET)\Teste Calculadora\Calculadora\obj\Debug\net8.0\Calculadora.sourcelink.json

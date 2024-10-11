@@ -28,8 +28,7 @@ namespace calculos.Classes
                 Console.WriteLine("  7 - Seno");
                 Console.WriteLine("  8 - Coseno");
                 Console.WriteLine("  9 - Tangente");
-                Console.WriteLine("  10 - incremento");
-                Console.WriteLine("  11 - decremento");
+                Console.WriteLine("  10 - Tabuada");
                 Console.WriteLine("  0 - Sair");
                 Console.Write("  Digite sua opção: ");
 
@@ -54,9 +53,7 @@ namespace calculos.Classes
                         break;
                     case 9: calculos.Tangente();
                         break;
-                    case 10: calculos.Incremento();
-                        break;
-                    case 11: calculos.Decremento();
+                    case 10: calculos.Tabuada();
                         break;
                     case 0: Console.WriteLine("  Desligando...");
                             Thread.Sleep(1000);
